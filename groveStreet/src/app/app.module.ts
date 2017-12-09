@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FirstPageComponent } from './first-page/first-page.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
-
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
     NavigationBarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
