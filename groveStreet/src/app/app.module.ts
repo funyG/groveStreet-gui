@@ -6,16 +6,19 @@ import { AppComponent } from './app.component';
 import { FirstPageComponent } from './first-page/first-page.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import {HttpClientModule} from '@angular/common/http';
+import { AllProductsComponent } from './all-products/all-products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstPageComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    AllProductsComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
