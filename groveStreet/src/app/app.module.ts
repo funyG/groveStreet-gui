@@ -7,13 +7,15 @@ import { FirstPageComponent } from './first-page/first-page.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AllProductsComponent } from './all-products/all-products.component';
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstPageComponent,
     NavigationBarComponent,
-    AllProductsComponent
+    AllProductsComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
