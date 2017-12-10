@@ -3,13 +3,23 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-
+import { FirstPageComponent } from './first-page/first-page.component';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import {HttpClientModule} from '@angular/common/http';
+import { AllProductsComponent } from './all-products/all-products.component';
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FirstPageComponent,
+    NavigationBarComponent,
+    AllProductsComponent,
+    CategoryComponent
   ],
   imports: [
+    BrowserModule,
+    HttpClientModule,
     BrowserModule
   ],
   providers: [],
