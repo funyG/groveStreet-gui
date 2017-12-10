@@ -23,7 +23,7 @@ export class CategoryComponent implements OnInit {
     this.http.get<ItemsResponse[]>(this.url).subscribe(data => {
       this.categories = data;
       if (this.categories.length > 1) {
-        console.log("Dobil sem kategorije", this.categories);
+        console.log("Kategorije, ki so na voljo ", this.categories);
       } else {
         console.error("array je prazen");
 
