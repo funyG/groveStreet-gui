@@ -11,15 +11,8 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';@Component({
 })
 
 export class FirstPageComponent  implements OnInit {
-  title = 'details';
-  id: string;
 
-  arrAgents: string[];
-  results: string[];
-  res = this.results;
-  agent: string;
-  selectedAgent: string;
-  private url = 'http://localhost:8080/RESTfulProject-0.0.1-SNAPSHOT/REST/Products/all';
+  private url = 'http://localhost:8080/RESTfulProject-0.0.1-SNAPSHOT/REST/Products/categories';
 
 
   constructor(private http: HttpClient) {
@@ -31,20 +24,7 @@ export class FirstPageComponent  implements OnInit {
 
     }
 
-    this.http.get<ItemsResponse>(this.url).subscribe(data => {
-      // data is now an instance of type ItemsResponse, so you can do this:
-      this.results = [];
-      this.agent = JSON.stringify(data);
-      this.arrAgents = Object.keys(data).map(key => data[key]);
-      for (let i = 0; i < this.arrAgents.length; i++) {
-        console.log(this.arrAgents[i]);
-        this.results.push(this.arrAgents[i]);
 
-      }
-      console.log('angular data ' + JSON.stringify(data));
-      console.log('acs ' + JSON.stringify(this.arrAgents));
-
-    });
   }
 
 }
