@@ -8,7 +8,6 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import {HttpClientModule} from '@angular/common/http';
 import { AllProductsComponent } from './all-products/all-products.component';
 import { CategoryComponent } from './category/category.component';
-import { ProductListComponent} from './Products/product-list.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +15,7 @@ import { ProductListComponent} from './Products/product-list.component';
     FirstPageComponent,
     NavigationBarComponent,
     AllProductsComponent,
-    CategoryComponent,
-    ProductListComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
