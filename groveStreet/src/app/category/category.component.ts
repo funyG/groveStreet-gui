@@ -21,7 +21,6 @@ export class CategoryComponent implements OnInit {
     }
 
     this.http.get<ItemsResponse[]>(this.url).subscribe(data => {
-<<<<<<< .merge_file_IIdnj7
         this.categories = data;
         if (this.categories.length > 1) {
           console.log("Kategorije, ki so na voljo ", this.categories);
@@ -32,18 +31,6 @@ export class CategoryComponent implements OnInit {
 
 
       }
-=======
-      this.categories = data;
-      if (this.categories.length > 1) {
-        console.log("Kategorije, ki so na voljo ", this.categories);
-      } else {
-        console.error("array je prazen");
-
-      }
-
-
-    }
->>>>>>> .merge_file_flLme8
 
 
 
